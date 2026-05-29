@@ -13,12 +13,11 @@ import io.restassured.response.Response;
 public class SchemaValidationTest {
 	@Test
 	public void sampleTest() {
-
-		ProjectPojo pObj = new ProjectPojo("TestProject", "Created", "TestManager", 0);
+		ProjectPojo pObj = new ProjectPojo("TestProject552", "Created", "TestManager", 0);
 		Response res = given().contentType(ContentType.JSON).body(pObj).when()
 				.post("http://49.249.29.4:8091/addProject");
 		res.then().log().all();
-		res.then().body(JsonSchemaValidator.matchesJsonSchema(new File("./test_Resource//jsonschema.json")));
+		res.then().body(JsonSchemaValidator.matchesJsonSchema(new File("./test_Resource/jsonschema.json")));
 
 	}
 }

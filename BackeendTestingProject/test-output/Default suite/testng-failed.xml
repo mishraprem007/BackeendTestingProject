@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="wireMocking.WireMockingClass">
+      <class name="authtest.PremtiveAuthTest3">
         <methods>
-          <include name="wireMockTest"/>
+          <include name="sampleTest"/>
         </methods>
-      </class> <!-- wireMocking.WireMockingClass -->
+      </class> <!-- authtest.PremtiveAuthTest3 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
