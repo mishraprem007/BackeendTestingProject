@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ninza.hrm.api.employeetest.EmployeeTest">
+      <class name="wireMocking.WireMockingClass">
         <methods>
-          <include name="addEmployeeWithoutEmailTest"/>
+          <include name="wireMockTest"/>
         </methods>
-      </class> <!-- com.ninza.hrm.api.employeetest.EmployeeTest -->
+      </class> <!-- wireMocking.WireMockingClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
